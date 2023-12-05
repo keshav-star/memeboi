@@ -47,6 +47,6 @@ app.listen(port, () => {
 
 sendDailyMessage()
 
-cron.schedule('0 */1 * * *', () => {
+cron.schedule('* */1 * * *', () => {
     sendDailyMessage();
 });
